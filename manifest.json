@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "3.4.3",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "index.html",
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    "50x.html": {
+      "checksum": "d74f9cdd604653c22c6752c46fffd587"
+    },
+    "air.css": {
+      "checksum": "29619bdb222c07a723193cd14651ad2d"
+    },
+    "img/button-rsc.png": {
+      "checksum": "5898cf480cd7868ff6dc86b9413c87ca"
+    },
+    "img/button-rsp.png": {
+      "checksum": "d720e17a925636747bc46bbfdf75fd23"
+    },
+    "img/button-rspm.png": {
+      "checksum": "89058f767bc4461c1b359303c9bfee66"
+    },
+    "img/favicon.ico": {
+      "checksum": "5f532edaf466da8f1518bd65d723dfa6"
+    },
+    "img/rsc-og-fb.jpg": {
+      "checksum": "53be9f5cec4afc2b6081977a2b0a2c20"
+    },
+    "img/rsp-fb.jpg": {
+      "checksum": "32e85b6c0c15ec35ce82121a048d0abd"
+    },
+    "img/rspm-og-fb.jpg": {
+      "checksum": "b12d1dfdc72ea757466e2af3e429d8e3"
+    },
+    "img/RStudio-Logo-Flat.png": {
+      "checksum": "fb71faa9aa7f71b9af6e5622c6b9c5d8"
+    },
+    "index.html": {
+      "checksum": "3dd5a0fa1903d9b89d8383f09b83330d"
+    }
+  },
+  "users": null
+}
