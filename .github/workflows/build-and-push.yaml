@@ -17,8 +17,8 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_PAT }}
+          username: actions@github.com
+          password: ${{ secrets.GITHUB_TOKEN }}
       -
         name: Build and push
         id: docker_build
@@ -29,7 +29,7 @@ jobs:
             - ghcr.io/sol-eng/demo-landing-site:${{ github.sha }}
             - ghcr.io/sol-eng/demo-landing-site:latest
           secrets: |
-            GITHUB_AUTH_TOKEN=${{ secrets.GITHUB_PAT }}
+            GITHUB_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
