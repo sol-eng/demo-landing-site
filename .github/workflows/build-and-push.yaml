@@ -26,8 +26,8 @@ jobs:
         with:
           push: true
           tags: |
-            - ghcr.io/sol-eng/demo-landing-site:${{ github.sha }}
-            - ghcr.io/sol-eng/demo-landing-site:latest
+            ghcr.io/sol-eng/demo-landing-site:${{ github.sha }}
+            ghcr.io/sol-eng/demo-landing-site:latest
           secrets: |
             GITHUB_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}
       -
