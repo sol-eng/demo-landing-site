@@ -18,7 +18,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.BUILD_PAT }}
+          password: ${{ secrets.GITHUB_PAT }}
       -
         name: Build and push
         id: docker_build
@@ -28,11 +28,8 @@ jobs:
           tags: |
             - ghcr.io/sol-eng/demo-landing-site:${{ github.sha }}
             - ghcr.io/sol-eng/demo-landing-site:latest
-          build-args: |
-            GITHUB_PAT=${{ secrets.BUILD_PAT }}
-            USERNAME=${{ github.actor }}
           secrets: |
-            GITHUB_AUTH_TOKEN=${{ secrets.BUILD_PAT }}
+            GITHUB_AUTH_TOKEN=${{ secrets.GITHUB_PAT }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
