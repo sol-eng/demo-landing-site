@@ -84,6 +84,7 @@ p,
   margin-bottom: 1.3rem;
 }
 
+
 h1,
 .air-h1,
 h2,
@@ -111,6 +112,8 @@ h2,
 h3,
 .air-h3 {
   font-size: 1.999rem;
+  color: #404041
+  
 }
 
 h4,
@@ -145,13 +148,13 @@ textarea {
   max-width: 100%;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300);
+@import url(http://fonts.googleapis.com/css2?family=Open+Sans:400);
 
 body {
-  color: #444;
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-weight: 300;
-  margin: 6rem auto 1rem;
+  color: #444444;
+  font-family: 'Open Sans', Helvetica;
+  font-weight: 400;
+  margin: auto;
   max-width: 48rem;
   text-align: center;
 }
@@ -164,17 +167,18 @@ img {
 
 a,
 a:visited {
-  color: #3498db;
+  color: #EE6331;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #2980b9;
+  color: #EE6331;
+  
 }
 
 pre {
-  background-color: #fafafa;
+  background-color: #404041;
   padding: 1rem;
   text-align: left;
 }
