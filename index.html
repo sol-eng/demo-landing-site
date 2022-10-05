@@ -4,9 +4,9 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+<link rel="shortcut icon" type="image/png" href="posit_img/favicon.svg"/>
 
-<title>RStudio Demo Environment</title>
+<title>Posit Demo Environment</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,13 +16,13 @@
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
-    background-color: white;
+    background-color: #ffffff;
   }
 </style>
 
 
 
-<style type="text/css">
+<style type="text/css" href="air.css">
 h1 {
   font-size: 34px;
 }
@@ -53,7 +53,6 @@ h6 {
 
 </head>
 
-
 <style type="text/css">
 .main-container {
   max-width: 940px;
@@ -62,15 +61,17 @@ h6 {
 }
 code {
   color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: #0000000a;
 }
 img {
   max-width:100%;
   height: auto;
   width: 300px;
+
 }
 body {
-  max-width: 70rem;
+  max-width: 100rem;
+  background-color: #ffffff;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -78,51 +79,96 @@ body {
 button.code-folding-btn:focus {
   outline: none;
 }
-.btn-img {
+
+.btn-light {
+  height: 110px;
+  width: 275px;
   border-radius: 5px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.2s;
   margin-bottom: 20px;
+  
 }
 
-.btn-img:hover {
+.btn-light:hover {
   transform: scale(1.02);
 }
 
-.btn-img:active {
-  /*box-shadow: 0 5px #666;*/
-  /*transform: scale(1.02);*/
+.btn-light:active {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
   transform: translateY(2px);
 }
+
+
+.drop-menu {
+  font-size: 0.9rem;
+  border: none;
+  background-color: none;
+}
+.navbar, .bg-custom {
+    top: 10px;
+    color: #ffffff;
+
+}
+
+.footer {
+  position: relative;
+  bottom: 0rem;
+  width: 100%;
+
+} 
+.img-map {
+  width: 45%;
+  height: 45%;
+}
+
+.orange {
+  color: #EE6331
+}
+
 </style>
+
+<nav class="navbar navbar-expand-lg bg-custom justify-content-end">
+  <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+      <ul class="navbar-nav text-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Other Resources
+            </a>
+            <div class="dropdown-menu drop-menu" aria-labelledby="navbarDropdown">
+              <a href="/kubernetes/">Kubernetes Dashboard</a><br>
+              <a href="https://docs.rstudio.com">Documentation</a><br>
+              <a href="/rstudio/admin">Posit Workbench Admin Dashboard</a><br>
+              <a href="https://docs.rstudio.com/pro-drivers/">Posit Professional Drivers</a><br>
+              <a href="https://d-qbilvpcidqm5.studio.us-east-2.sagemaker.aws/rstudio/default">RStudio on AWS SageMaker</a> 
+          </li>
+      </ul>
+  </div>
+</nav>
+
 
 <div>
 
-<h3>Product Demos</h3>
-<br>
+<!-- <h3>Posit Team</h3> -->
+<img src="posit_img/logo-team-full-color.svg" alt="Posit Team"> <br> <br> <br> <br>
 
 <div class="container">
   <div class="row">
-    <div class="col-sm"><a href="/rstudio/"><img class="btn-img img-fluid" src="img/rsw-fb.jpg" alt="RStudio Workbench"></a></div>
-    <div class="col-sm"><a href="/rsc/"><img class="btn-img img-fluid" src="img/rsc-og-fb.jpg" alt="RStudio Connect"></a></div>
-    <div class="col-sm"><a href="/rspm/"><img class="btn-img img-fluid" src="img/rspm-og-fb.jpg" alt = "RStudio Package Manager"></a></div>
+    <div class="col-sm"><a href="/rstudio/"><button class="btn btn-light"> <img class="img-fluid"  src="posit_img/logo-workbench-full-color.svg" alt="Posit Workbench"></button></a></div>
+    <div class="col-sm"><a href="/rsc/"><button class="btn btn-light"><img class="img-fluid" src="posit_img/logo-connect-full-color.svg" alt="Posit Connect"></button></a></div>
+    <div class="col-sm"><a href="/rspm/"><button class="btn btn-light"><img class="img-fluid" src="posit_img/logo-package-manager-full-color.svg" alt = "Posit Package Manager"></button></a></a></div>
   </div>
 </div>
+</div> <br>
+<img class=img-map src="posit_img/concept_map.jpg" alt="RST Map"> <br> <br>
 
-<h3>Other Tools</h3>
-  <p><a href="/kubernetes/">Kubernetes Dashboard</a></p>
-  <p><a href="https://docs.rstudio.com">Documentation</a></p>
-  <p><a href="/rstudio/admin">RStudio Admin Dashboard</a></p>
-  <p><a href="https://docs.rstudio.com/pro-drivers/">RStudio Professional Drivers</a></p>
-  <p><a href="https://d-qbilvpcidqm5.studio.us-east-2.sagemaker.aws/rstudio/default">RStudio on AWS SageMaker</a></p> 
-
-<br>
-
-<p><small><a href="https://www.rstudio.com/">RStudio, PBC</a><br>250 Northern Ave, Boston, MA 02210<br>844-448-1212</small></p>
-<p><small>Copyright 2021 RStudio | All Rights Reserved | <a href="https://www.rstudio.com/about/eula/">Legal Terms</a></small></p>
 
 </div>
+
+<footer class="footer">
+  <small><a href="https://www.posit.co/">Posit, PBC </a>| Copyright 2022 Posit Software, PBC | All Rights Reserved | <a href="https://www.rstudio.com/about/eula/">Legal Terms</a></small>
+  <!-- <p><small>Copyright 2022 Posit Software, PBC | All Rights Reserved | <a href="https://www.rstudio.com/about/eula/">Legal Terms</a></small></p> -->
+</footer>
 
 <!-- For bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
